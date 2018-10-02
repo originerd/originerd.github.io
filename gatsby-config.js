@@ -3,7 +3,6 @@ module.exports = {
     title: 'Originerd',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -17,5 +16,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
   ],
 }
