@@ -4,7 +4,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Originerd',
         short_name: 'Originerd',
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages/posts`,
-        name: 'posts',
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
       },
     },
     'gatsby-transformer-remark',

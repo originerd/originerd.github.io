@@ -1,9 +1,9 @@
-import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
+import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import Header from './Header'
 import './layout.css'
 
 const Layout = ({ children }) => (
