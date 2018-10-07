@@ -1,0 +1,36 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.landing__title {
+  font-size: 4em;
+  user-select: none;
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 60rem) {
+  .landing {
+    margin: 0 auto;
+    max-width: 40rem;
+  }
+
+  .landing-nav {
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  .landing-nav__item {
+    margin-bottom: 1em;
+  }
+}
