@@ -6,6 +6,30 @@ html {
   background-color: #222;
   color: #ECECEC;
   font-family: 'Acme', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  background-color: #41C1C1;
+  bottom: 0;
+  content: '';
+  height: .1em;
+  left: 0;
+  position: absolute;
+  transition: .2s;
+  width: 100%;
+  z-index: -1;
+}
+
+a:hover::after {
+  height: 100%;
+  transform: skew(-4deg);
 }
 
 .nav-link {
