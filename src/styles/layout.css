@@ -59,12 +59,16 @@ a:hover::after {
   z-index: -1;
 }
 
-.nav-link--yellow::after {
-  background-color: #FFC756;
+.nav-link--cherryred::after {
+  background-color: #FF5656;
 }
 
-.nav-link--pink::after {
-  background-color: #FF5656;
+.nav-link--orange::after {
+  background-color: #FFA356;
+}
+
+.nav-link--yellow::after {
+  background-color: #FFC756;
 }
 
 .nav-link:hover::after {
