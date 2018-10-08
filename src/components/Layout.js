@@ -1,5 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby'
 import 'normalize.css'
+import 'prismjs/themes/prism-solarizedlight.css'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Helmet from 'react-helmet'
