@@ -32,9 +32,16 @@ a:hover::after {
   transform: skew(-4deg);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 2rem 3rem;
+}
+
 .nav-link {
   color: inherit;
   display: inline-block;
+  line-height: 1;
   position: relative;
   text-decoration: none;
   transform-origin: left;
