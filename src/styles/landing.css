@@ -7,7 +7,8 @@
 }
 
 .landing__title {
-  font-size: 4em;
+  font-family: 'Acme', sans-serif;
+  font-size: 3em;
   user-select: none;
 }
 
@@ -19,7 +20,7 @@
 @media (max-width: 60rem) {
   .landing {
     margin: 0 auto;
-    max-width: 40rem;
+    max-width: 35rem;
   }
 
   .landing-nav {

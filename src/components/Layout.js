@@ -22,12 +22,10 @@ const Layout = ({ children }) => (
       <>
         <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
-          <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Acme|Do+Hyeon" rel="stylesheet" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div class="container">
-          {children}
-        </div>
+        {children}
       </>
     )}
   />

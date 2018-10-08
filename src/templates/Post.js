@@ -23,10 +23,12 @@ class Post extends React.Component {
 
     return (
       <Layout>
-        <h1>{title}</h1>
-        <p>{date}</p>
-        {this.renderTags()}
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <article class="container container--article">
+          <h1>{title}</h1>
+          <p>{date}</p>
+          {this.renderTags()}
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </article>
       </Layout>
     )
   }

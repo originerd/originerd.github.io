@@ -4,8 +4,9 @@
 
 html {
   background-color: #222;
-  color: #ECECEC;
-  font-family: 'Acme', sans-serif;
+  color: #EFEFEF;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -19,7 +20,7 @@ a::after {
   background-color: #41C1C1;
   bottom: 0;
   content: '';
-  height: .1em;
+  height: .15em;
   left: 0;
   position: absolute;
   transition: .2s;
@@ -29,18 +30,24 @@ a::after {
 
 a:hover::after {
   height: 100%;
-  transform: skew(-4deg);
+  padding: .1em .2em;
+  transform: skew(-4deg) translateX(-.2em);
 }
 
 .container {
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 55rem;
   padding: 2rem 3rem;
+}
+
+.container--article {
+  max-width: 50rem;
 }
 
 .nav-link {
   color: inherit;
   display: inline-block;
+  font-family: 'Acme', sans-serif;
   line-height: 1;
   position: relative;
   text-decoration: none;
@@ -82,5 +89,5 @@ a:hover::after {
 }
 
 .nav-link__content--large {
-  font-size: 6em;
+  font-size: 5em;
 }

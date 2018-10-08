@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import '../styles/header.css'
 
 const navItems = ['about', 'posts', 'projects'];
-const navColors = ['yellow', 'cherryred', 'orange'];
+const navColors = ['yellow', 'orange', 'cherryred'];
 
 const renderNavLinks = () => {
   const { pathname } = window.location;
