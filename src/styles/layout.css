@@ -79,6 +79,7 @@ a:hover::after {
 }
 
 .nav-link:hover::after {
+  padding: 0;
   transform: skew(-4deg);
   width: 100%;
 }
