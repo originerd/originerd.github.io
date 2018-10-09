@@ -12,8 +12,10 @@ html {
 
 a {
   color: inherit;
+  display: inline-block;
   position: relative;
   text-decoration: none;
+  z-index: 1;
 }
 
 a::after {
@@ -32,6 +34,10 @@ a:hover::after {
   height: 100%;
   padding: .1em .2em;
   transform: skew(-4deg) translateX(-.2em);
+}
+
+a > * {
+  margin: 0;
 }
 
 blockquote {
@@ -64,6 +70,21 @@ pre[class*="language-"] {
   background-color: #282828;
   border-radius: 4px;
   font-size: .9rem;
+}
+
+.card {
+  background-color: #282828;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
 }
 
 .container {
@@ -117,7 +138,6 @@ pre[class*="language-"] {
 }
 
 .nav-link__content {
-  margin: 0;
   padding: .1em .2em;
 }
 

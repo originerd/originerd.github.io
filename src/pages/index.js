@@ -6,7 +6,7 @@ import '../styles/landing.css'
 
 const IndexPage = () => (
   <Layout>
-    <main className="container">
+    <main className="container container--landing">
       <section className="landing">
         <h1 className="landing__title">Originerd</h1>
         <nav className="landing-nav">
