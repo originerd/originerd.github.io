@@ -23,7 +23,7 @@ class Post extends React.Component {
 
     return (
       <Layout>
-        <article class="container container--article">
+        <article className="container container--article">
           <h1>{title}</h1>
           <p>{date}</p>
           {this.renderTags()}
