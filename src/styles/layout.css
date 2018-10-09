@@ -34,6 +34,38 @@ a:hover::after {
   transform: skew(-4deg) translateX(-.2em);
 }
 
+blockquote {
+  position: relative;
+}
+
+blockquote::before {
+  background-color: #41C1C1;
+  content: '';
+  height: 100%;
+  left: -1em;
+  position: absolute;
+  width: .2em;
+}
+
+:not(pre) > code[class*="language-"] {
+  background: transparent;
+  border: 1px dotted #EFEFEF;
+  border-radius: 2px;
+  color: inherit;
+  font-family: inherit;
+  padding: 0 .2em;
+}
+
+li > p {
+  margin: 0;
+}
+
+pre[class*="language-"] {
+  background-color: #282828;
+  border-radius: 4px;
+  font-size: .9rem;
+}
+
 .container {
   margin: 0 auto;
   max-width: 55rem;
