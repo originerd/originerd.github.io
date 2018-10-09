@@ -7,7 +7,7 @@ const navItems = ['about', 'posts', 'projects'];
 const navColors = ['yellow', 'orange', 'cherryred'];
 
 const renderNavLinks = () => {
-  const { pathname } = window.location;
+  const { pathname } = typeof window !== 'undefined' && window.location;
 
   return navItems.filter((navItem) => pathname !== `/${navItem}/`)
     .map((navItem, i) => (
@@ -20,7 +20,7 @@ const renderNavLinks = () => {
 }
 
 const Header = ({ siteTitle }) => {
-  if (window.location.pathname === '/') {
+  if (typeof window !== 'undefined' && window.location.pathname === '/') {
     return null;
   }
 
