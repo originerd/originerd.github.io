@@ -25,11 +25,13 @@ date: 2018-10-03 21:35:50
     - 사용한 기술로는 Java Spring MVC, Javascript(with jQuery), MySQL, HSQLDB 그리고 Git이 있습니다.
 
 ## 학력
+
 - ### 한국산업기술대학교
     - #### 컴퓨터공학과 (2009.03 - 2016.02)
     - 3.9/4.5
 
 ## 연락처
+
 - Email: [originerd@gmail.com](mailto:originerd@gmail.com)
 - Github: https://github.com/originerd
 - LinkedIn: https://linkedin.com/in/originerd

@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import moment from 'moment'
+import 'moment-timezone'
 import React from 'react'
 
 import Layout from '../components/Layout'
@@ -25,7 +27,7 @@ class Post extends React.Component {
       <Layout>
         <article className="container container--article">
           <h1>{title}</h1>
-          <p>{date}</p>
+          <p>{moment.tz(date, 'Asia/Seoul').format('lll')}</p>
           {this.renderTags()}
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </article>
