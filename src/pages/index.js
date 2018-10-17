@@ -21,8 +21,8 @@ const IndexPage = () => (
             </Link>
           </div>
           <div className="landing-nav__item">
-            <Link className="nav-link nav-link--cherryred" to="/projects/">
-              <h1 className="nav-link__content nav-link__content--large">projects</h1>
+            <Link className="nav-link nav-link--cherryred" to="/resume/">
+              <h1 className="nav-link__content nav-link__content--large">résumé</h1>
             </Link>
           </div>
         </nav>
