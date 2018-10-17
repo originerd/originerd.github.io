@@ -21,7 +21,7 @@ a {
 
 a::after {
   background-color: #41C1C1;
-  bottom: 0;
+  bottom: .15em;
   content: '';
   height: .15em;
   left: 0;
@@ -36,7 +36,7 @@ a:hover {
 }
 
 a:hover::after {
-  height: 100%;
+  height: calc(100% - .3em);
   padding: .1em .2em;
   transform: skew(-4deg) translateX(-.2em);
 }
@@ -67,7 +67,7 @@ blockquote::before {
   padding: 0 .2em;
 }
 
-li > p {
+li > * {
   margin: 0;
 }
 
@@ -137,6 +137,7 @@ pre[class*="language-"] {
 }
 
 .nav-link:hover::after {
+  height: 100%;
   padding: 0;
   transform: skew(-4deg);
   width: 100%;
