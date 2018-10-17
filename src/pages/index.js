@@ -12,17 +12,23 @@ const IndexPage = () => (
         <nav className="landing-nav">
           <div className="landing-nav__item">
             <Link className="nav-link" to="/about/">
-              <h1 className="nav-link__content nav-link__content--large">about</h1>
+              <h1 className="nav-link__content nav-link__content--large">
+                about
+              </h1>
             </Link>
           </div>
           <div className="landing-nav__item">
             <Link className="nav-link nav-link--yellow" to="/posts/">
-              <h1 className="nav-link__content nav-link__content--large">posts</h1>
+              <h1 className="nav-link__content nav-link__content--large">
+                posts
+              </h1>
             </Link>
           </div>
           <div className="landing-nav__item">
             <Link className="nav-link nav-link--cherryred" to="/resume/">
-              <h1 className="nav-link__content nav-link__content--large">résumé</h1>
+              <h1 className="nav-link__content nav-link__content--large">
+                résumé
+              </h1>
             </Link>
           </div>
         </nav>

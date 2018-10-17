@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import '../fonts/index.css';
+import '../fonts/index.css'
 import '../styles/layout.css'
 import Header from './Header'
 

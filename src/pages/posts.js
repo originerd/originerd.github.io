@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import Layout from '../components/Layout'
 
-const renderPosts = (posts) => (
+const renderPosts = posts =>
   posts.map(({ excerpt, fields, frontmatter, id }) => (
     <article className="card" key={id}>
       <Link to={fields.slug}>
@@ -13,12 +13,15 @@ const renderPosts = (posts) => (
       <p>{excerpt}</p>
     </article>
   ))
-)
 
-const Posts = ({ data: { allMarkdownRemark: { edges } } }) => (
+const Posts = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => (
   <Layout>
     <main className="container container--article">
-      {renderPosts(edges.map((edge) => edge.node))}
+      {renderPosts(edges.map(edge => edge.node))}
     </main>
   </Layout>
 )
@@ -26,20 +29,22 @@ const Posts = ({ data: { allMarkdownRemark: { edges } } }) => (
 Posts.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.arrayOf(PropTypes.shape({
-        node: PropTypes.shape({
-          excerpt: PropTypes.string,
-          fields: PropTypes.shape({
-            slug: PropTypes.string,
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            excerpt: PropTypes.string,
+            fields: PropTypes.shape({
+              slug: PropTypes.string,
+            }),
+            frontmatter: PropTypes.shape({
+              date: PropTypes.string,
+              tags: PropTypes.array,
+              title: PropTypes.string,
+            }),
+            id: PropTypes.string,
           }),
-          frontmatter: PropTypes.shape({
-            date: PropTypes.string,
-            tags: PropTypes.array,
-            title: PropTypes.string,
-          }),
-          id: PropTypes.string,
-        }),
-      })),
+        })
+      ),
     }),
   }),
 }
@@ -47,7 +52,7 @@ Posts.propTypes = {
 export const pageQuery = graphql`
   query Posts {
     allMarkdownRemark(
-      filter: { fields: { slug: { regex: "\/^/posts/*\/" } } }
+      filter: { fields: { slug: { regex: "/^/posts/*/" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
