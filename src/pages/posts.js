@@ -47,7 +47,7 @@ Posts.propTypes = {
 export const pageQuery = graphql`
   query Posts {
     allMarkdownRemark(
-      filter: { fields: { slug: { ne: "/about/" } } }
+      filter: { fields: { slug: { regex: "\/^/posts/*\/" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
