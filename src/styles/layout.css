@@ -4,7 +4,7 @@
 
 html {
   background-color: #222;
-  color: #EFEFEF;
+  color: #DDD;
   font-family: 'Do Hyeon', sans-serif;
   font-size: 20px;
   line-height: 1.6;
@@ -15,6 +15,7 @@ a {
   display: inline-block;
   position: relative;
   text-decoration: none;
+  transition: .2;
   z-index: 1;
 }
 
@@ -28,6 +29,10 @@ a::after {
   transition: .2s;
   width: 100%;
   z-index: -1;
+}
+
+a:hover {
+  color: #F8F8F8;
 }
 
 a:hover::after {
