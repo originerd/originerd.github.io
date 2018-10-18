@@ -35,7 +35,7 @@ const Layout = ({ children, hideHeader }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  hideHeader: PropTypes.boolean,
+  hideHeader: PropTypes.bool,
 }
 
 export default Layout

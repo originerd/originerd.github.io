@@ -50,7 +50,7 @@ const Header = ({ hide, siteTitle }) => {
 }
 
 Header.propTypes = {
-  hide: PropTypes.boolean,
+  hide: PropTypes.bool,
   siteTitle: PropTypes.string.isRequired,
 }
 
