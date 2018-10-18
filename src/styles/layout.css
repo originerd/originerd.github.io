@@ -102,7 +102,7 @@ pre[class*='language-'] {
   padding: 2rem 3rem;
 }
 
-.container--article {
+.container.container--article {
   max-width: 50rem;
 }
 
