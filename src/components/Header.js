@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import '../styles/header.css'
 
@@ -26,8 +27,8 @@ const renderNavLinks = () => {
     ))
 }
 
-const Header = ({ siteTitle }) => {
-  if (typeof window !== 'undefined' && window.location.pathname === '/') {
+const Header = ({ hide, siteTitle }) => {
+  if (hide) {
     return null
   }
 
@@ -39,6 +40,11 @@ const Header = ({ siteTitle }) => {
       <div>{renderNavLinks()}</div>
     </nav>
   )
+}
+
+Header.propTypes = {
+  hide: PropTypes.boolean,
+  siteTitle: PropTypes.string.isRequired,
 }
 
 export default Header

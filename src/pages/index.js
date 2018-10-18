@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import '../styles/landing.css'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout hideHeader>
     <main className="container container--landing">
       <section className="landing">
         <h1 className="landing__title">Originerd</h1>

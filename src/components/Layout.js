@@ -10,7 +10,7 @@ import Header from './Header'
 
 moment.locale('ko')
 
-const Layout = ({ children }) => (
+const Layout = ({ children, hideHeader }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
         <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header hide={hideHeader} siteTitle={data.site.siteMetadata.title} />
         {children}
       </>
     )}
@@ -35,6 +35,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  hideHeader: PropTypes.boolean,
 }
 
 export default Layout
