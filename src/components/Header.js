@@ -44,7 +44,7 @@ const Header = ({ hide, siteTitle }) => {
       <Link className="nav-link" to="/">
         <h1 className="nav-link__content">{siteTitle}</h1>
       </Link>
-      <div>{renderNavLinks()}</div>
+      <div className="nav-link-group">{renderNavLinks()}</div>
     </nav>
   )
 }

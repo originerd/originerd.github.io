@@ -9,9 +9,13 @@
   margin-left: 1em;
 }
 
-.header .nav-link:first-child {
+.header > .nav-link:first-child {
   margin: 0;
   margin-left: -.4em;
+}
+
+.nav-link-group {
+  display: flex;
 }
 
 .title {
@@ -27,4 +31,17 @@
   display: inline-block;
   font-size: 3em;
   margin: 0;
+}
+
+@media (max-width: 60rem) {
+  .header {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .nav-link-group {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
