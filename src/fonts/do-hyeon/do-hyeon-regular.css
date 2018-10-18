@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Do Hyeon';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('./do-hyeon-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./do-hyeon-regular.woff') format('woff'); /* Modern Browsers */
+}

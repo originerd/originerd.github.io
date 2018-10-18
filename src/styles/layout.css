@@ -1,3 +1,7 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/prismjs/themes/prism-solarizedlight.css';
+@import '../fonts/index.css';
+
 * {
   box-sizing: border-box;
 }
@@ -58,7 +62,7 @@ blockquote::before {
   width: .2em;
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   background: transparent;
   border: 1px dotted #EFEFEF;
   border-radius: 2px;
@@ -71,7 +75,7 @@ li > * {
   margin: 0;
 }
 
-pre[class*="language-"] {
+pre[class*='language-'] {
   background-color: #282828;
   border-radius: 4px;
   font-size: .9rem;

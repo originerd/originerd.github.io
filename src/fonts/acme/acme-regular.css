@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('./acme-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./acme-regular.woff') format('woff'); /* Modern Browsers */
+}
