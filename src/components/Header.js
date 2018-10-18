@@ -11,16 +11,28 @@ const navItems = [
 ]
 const navColors = ['yellow', 'orange', 'cherryred']
 
-const renderNavLinks = () =>
-  navItems.map((navItem, i) => (
-    <Link
-      className={`nav-link nav-link--${navColors[i % navColors.length]}`}
-      key={navItem.name}
-      to={navItem.path}
-    >
-      <h2 className="nav-link__content">{navItem.name}</h2>
-    </Link>
-  ))
+const renderNavLinks = () => {
+  const currentPath = typeof window !== 'undefined' && window.location.pathname
+
+  return navItems.map((navItem, i) => {
+    const isActive = currentPath === navItem.path
+    const classNames = [
+      'nav-link',
+      `nav-link--${navColors[i % navColors.length]}`,
+      isActive && 'nav-link--active',
+    ]
+
+    return (
+      <Link
+        className={classNames.filter(Boolean).join(' ')}
+        key={navItem.name}
+        to={navItem.path}
+      >
+        <h2 className="nav-link__content">{navItem.name}</h2>
+      </Link>
+    )
+  })
+}
 
 const Header = ({ hide, siteTitle }) => {
   if (hide) {
