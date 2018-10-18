@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import moment from 'moment'
@@ -20,11 +21,15 @@ class Post extends React.Component {
   render() {
     const {
       markdownRemark: { frontmatter, html },
+      site: { siteMetadata },
     } = this.props.data
     const { date, title } = frontmatter
 
     return (
       <Layout>
+        <Helmet title={`${title} :: ${siteMetadata.title}`}>
+          <html lang="en" />
+        </Helmet>
         <article className="container container--article">
           <h1>{title}</h1>
           <p>{moment.tz(date, 'Asia/Seoul').format('lll')}</p>
@@ -47,6 +52,11 @@ Post.propTypes = {
       }),
       html: PropTypes.string,
     }),
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }),
+    }),
   }),
 }
 
@@ -60,6 +70,11 @@ export const query = graphql`
         title
       }
       html
+    }
+    site {
+      siteMetadata {
+        title
+      }
     }
   }
 `

@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import PropTypes from 'prop-types'
@@ -17,9 +18,15 @@ const renderPosts = posts =>
 const Posts = ({
   data: {
     allMarkdownRemark: { edges },
+    site: {
+      siteMetadata: { title },
+    },
   },
 }) => (
   <Layout>
+    <Helmet title={`Posts :: ${title}`}>
+      <html lang="en" />
+    </Helmet>
     <main className="container container--article">
       {renderPosts(edges.map(edge => edge.node))}
     </main>
@@ -46,6 +53,11 @@ Posts.propTypes = {
         })
       ),
     }),
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }),
+    }),
   }),
 }
 
@@ -68,6 +80,11 @@ export const pageQuery = graphql`
           }
           id
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
