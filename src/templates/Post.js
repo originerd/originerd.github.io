@@ -1,5 +1,5 @@
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 import 'moment-timezone'
@@ -8,6 +8,14 @@ import React from 'react'
 import Layout from '../components/Layout'
 
 class Post extends React.Component {
+  renderDate(date) {
+    const seoulTime = moment(date)
+      .add(-9, 'hours')
+      .format('lll')
+
+    return <p className="date">{seoulTime}</p>
+  }
+
   renderTags() {
     const { tags } = this.props.data.markdownRemark.frontmatter
 
@@ -32,7 +40,7 @@ class Post extends React.Component {
         </Helmet>
         <article className="container container--article">
           <h1>{title}</h1>
-          <p>{moment.tz(date, 'Asia/Seoul').format('lll')}</p>
+          {this.renderDate(date)}
           {this.renderTags()}
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </article>

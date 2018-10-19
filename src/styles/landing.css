@@ -12,8 +12,10 @@
 }
 
 .landing__title {
+  color: #222;
   font-family: 'Acme', sans-serif;
   font-size: 3em;
+  margin-top: 0;
   user-select: none;
 }
 
