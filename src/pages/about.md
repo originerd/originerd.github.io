@@ -1,6 +1,6 @@
 ---
-title: About
-date: 2018-10-03 21:35:50
+title: about
+date: 2018-10-22 22:28:55
 ---
 
 **Jitae Kim** *a.k.a. Originerd*
