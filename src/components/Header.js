@@ -9,7 +9,7 @@ const navItems = [
   { name: 'posts', path: '/posts/' },
   { name: 'résumé', path: '/resume/' },
 ]
-const navColors = ['yellow', 'orange', 'cherryred']
+const navColors = ['emerald', 'yellow', 'cherryred']
 
 const renderNavLinks = () => {
   const currentPath = typeof window !== 'undefined' && window.location.pathname

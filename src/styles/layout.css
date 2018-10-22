@@ -85,7 +85,7 @@ pre > code {
 }
 
 .card {
-  background-color: #F1F1F1;
+  background-color: #F8F8F8;
   border-radius: 4px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -129,7 +129,7 @@ pre > code {
 }
 
 .nav-link::after {
-  background-color: #41C1C1;
+  background-color: #222;
   bottom: 0;
   content: '';
   height: 100%;
@@ -148,8 +148,8 @@ pre > code {
   background-color: #FF5656;
 }
 
-.nav-link.nav-link--orange::after {
-  background-color: #FFA356;
+.nav-link.nav-link--emerald::after {
+  background-color: #41C1C1;
 }
 
 .nav-link.nav-link--yellow::after {
