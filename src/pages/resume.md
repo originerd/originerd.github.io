@@ -1,5 +1,5 @@
 ---
-title: résumé
+title: resume
 date: 2018-10-03 21:35:50
 ---
 

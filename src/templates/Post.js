@@ -1,5 +1,5 @@
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 import 'moment-timezone'

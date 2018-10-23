@@ -24,9 +24,13 @@
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 30rem) {
   .nav-link-group {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .nav-link-group > .nav-link {
+    margin: .05em 0;
   }
 }
