@@ -1,11 +1,11 @@
 ---
 title: about
-date: 2018-10-22 22:28:55
+date: 2018-01-15 14:11:50
 ---
 
 **Jitae Kim** *a.k.a. Originerd*
 
-Software Engineer at [Revisolution](https://revisolution.com/)
+Software Engineer
 
 - Contact
     - [CodePen](https://codepen.io/originerd/)

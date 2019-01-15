@@ -1,6 +1,6 @@
 ---
 title: resume
-date: 2018-10-03 21:35:50
+date: 2019-01-15 14:09:35
 ---
 
 # 김지태
@@ -10,9 +10,9 @@ date: 2018-10-03 21:35:50
 ## 경력
 
 - ### [리비솔루션 코리아](https://revisolution.com/)
-    - #### 소프트웨어 엔지니어 (2017.06 -)
-    - 대규모 공동 편집을 위한 플랫폼의 프론트엔드 및 백엔드를 개발하고 있습니다.
-    - 사용 중인 기술은 TypeScript, JavaScript, Node.js, Express, React, Redux, Redis, SocketCluster 그리고 AWS(EC2, S3, Elastic Beanstalk, ElastiCache, DynamoDB and etc)가 있습니다.
+    - #### 소프트웨어 엔지니어 (2017.06 - 2018.11)
+    - 대규모 공동 편집을 위한 플랫폼의 프론트엔드 및 백엔드를 개발하였습니다.
+    - 사용한 기술로는 TypeScript, JavaScript, Node.js, Express, React, Redux, Redis, SocketCluster 그리고 AWS(EC2, S3, Elastic Beanstalk, ElastiCache, DynamoDB and etc)가 있습니다.
 
 - ### [트릴리어네어](http://www.huiseoul.com/)
     - #### 소프트웨어 엔지니어 (2016.01 - 2017.06)
