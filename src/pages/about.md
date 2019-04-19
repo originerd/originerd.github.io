@@ -1,11 +1,11 @@
 ---
 title: about
-date: 2018-01-15 14:11:50
+date: 2019-04-19 23:36:30
 ---
 
 **Jitae Kim** *a.k.a. Originerd*
 
-Software Engineer
+Front-end Developer at [kakaopay](https://www.kakaopay.com/)
 
 - Contact
     - [CodePen](https://codepen.io/originerd/)
