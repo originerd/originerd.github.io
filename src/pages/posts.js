@@ -24,7 +24,7 @@ const Posts = ({
   },
 }) => (
   <Layout>
-    <Helmet title={`Posts :: ${title}`}>
+    <Helmet title={`posts :: ${title}`}>
       <html lang="en" />
     </Helmet>
     <main className="container container--article">
